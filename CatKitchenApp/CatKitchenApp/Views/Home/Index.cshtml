@@ -1,8 +1,67 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<CatKitchenApp.Models.Recipe>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="main-container">
+    <form asp-action="Index" method="get" class="filter-panel d-flex justify-content-between align-items-end">
+        <div class="filter-group">
+            <label>Категория кошкоеды</label>
+            <select name="categoryId" class="form-control" asp-items="ViewBag.Categories" onchange="this.form.submit()">
+                <option value="">Все категории</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Сортировка</label>
+            <select name="sortOrder" class="form-control" onchange="this.form.submit()">
+                <option value="">По умолчанию</option>
+                <option value="Time">Время</option>
+                <option value="Name">Название</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Поиск кошкорецептов</label>
+            <input type="text" name="searchString" class="form-control" placeholder="Введите название..." />
+        </div>
+
+        <div class="view-toggles">
+            <button class="btn btn-sm btn-outline-secondary">СПИСОК</button>
+            <button class="btn btn-sm btn-outline-secondary">ПЛИТКА</button>
+        </div>
+    </form>
+
+    <div class="recipe-list mt-4">
+        @foreach (var item in Model)
+        {
+            <div class="recipe-card p-3 mb-3 d-flex shadow-sm">
+                <div class="flex-grow-1">
+                    <h3>@item.RecipeName — классика котофейства</h3>
+                    <p class="text-muted">Категория: @item.Category?.CategoryName</p>
+                    <p>Описание: @item.Description</p>
+                </div>
+                <div class="text-right ml-3 border-left pl-3">
+                    <p class="h4">Время: @item.CookingTime мин</p>
+                    <img src="~/images/chef_cat.png" width="80" alt="Котик-повар" />
+                </div>
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <div class="admin-actions ml-2">
+                        <a asp-action="Edit" asp-route-id="@item.RecipeID" class="btn btn-sm btn-warning">✎</a>
+                        <a asp-action="Delete" asp-route-id="@item.RecipeID" class="btn btn-sm btn-danger">✕</a>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <div class="bottom-panel d-flex justify-content-between align-items-center mt-3">
+        <span>Найдено @ViewBag.Count рец.</span>
+        <div>
+            <button class="btn btn-secondary">избранное</button>
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-action="Create" class="btn btn-success">+ добавить рецепт</a>
+            }
+        </div>
+    </div>
 </div>

@@ -1,31 +1,27 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    background-color: #f5d7b3; /* Бежевый */
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.main-container {
+    border: 5px solid #a52a2a; /* Коричнево-красная рамка */
+    padding: 20px;
+    min-height: 90vh;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.recipe-card {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.filter-panel label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Кнопки в стиле твоего макета */
+.btn-outline-secondary {
+    background-color: #d3d3d3;
+    color: black;
+    border: 1px solid #000;
 }
