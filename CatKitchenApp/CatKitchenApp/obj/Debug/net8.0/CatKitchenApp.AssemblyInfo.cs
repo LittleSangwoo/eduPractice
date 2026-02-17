@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatKitchenApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b99bf0b35ef9f0a72e7d5c2b6df2f1fd1a9a7d25")]
 [assembly: System.Reflection.AssemblyProductAttribute("CatKitchenApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CatKitchenApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
