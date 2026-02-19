@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\10230948\\Desktop\\eduPractice-main\\CatKitchenApp\\CatKitchenApp\\CatKitchenApp.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\10230948\\Desktop\\eduPractice-main\\CatKitchenApp\\CatKitchenApp\\CatKitchenApp.csproj",
         "packagesPath": "C:\\Users\\10230948\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\10230948\\Desktop\\eduPractice-main\\CatKitchenApp\\CatKitchenApp\\obj\\",
+=======
+    "D:\\учёба\\уп\\CatKitchenApp\\CatKitchenApp\\CatKitchenApp.csproj": {}
+  },
+  "projects": {
+    "D:\\учёба\\уп\\CatKitchenApp\\CatKitchenApp\\CatKitchenApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\учёба\\уп\\CatKitchenApp\\CatKitchenApp\\CatKitchenApp.csproj",
+        "projectName": "CatKitchenApp",
+        "projectPath": "D:\\учёба\\уп\\CatKitchenApp\\CatKitchenApp\\CatKitchenApp.csproj",
+        "packagesPath": "C:\\Users\\LittleSangwoo\\.nuget\\packages\\",
+        "outputPath": "D:\\учёба\\уп\\CatKitchenApp\\CatKitchenApp\\obj\\",
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\10230948\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\LittleSangwoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +44,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
           "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+          "C:\\Users\\LittleSangwoo\\.nuget\\packages": {},
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +67,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
+<<<<<<< HEAD
         "SdkAnalysisLevel": "9.0.300"
+=======
+        "SdkAnalysisLevel": "10.0.100"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       },
       "frameworks": {
         "net8.0": {
@@ -97,7 +123,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         }
       }
     }

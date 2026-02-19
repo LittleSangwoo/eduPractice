@@ -263,6 +263,7 @@ D:\учёба\уп\CatKitchenApp\CatKitchenApp\obj\Debug\net8.0\refint\CatKitche
 D:\учёба\уп\CatKitchenApp\CatKitchenApp\obj\Debug\net8.0\CatKitchenApp.pdb
 D:\учёба\уп\CatKitchenApp\CatKitchenApp\obj\Debug\net8.0\CatKitchenApp.genruntimeconfig.cache
 D:\учёба\уп\CatKitchenApp\CatKitchenApp\obj\Debug\net8.0\ref\CatKitchenApp.dll
+<<<<<<< HEAD
 C:\Users\10230948\Desktop\eduPractice-main\CatKitchenApp\CatKitchenApp\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\10230948\Desktop\eduPractice-main\CatKitchenApp\CatKitchenApp\bin\Debug\net8.0\appsettings.json
 C:\Users\10230948\Desktop\eduPractice-main\CatKitchenApp\CatKitchenApp\bin\Debug\net8.0\CatKitchenApp.staticwebassets.runtime.json
@@ -527,3 +528,5 @@ C:\Users\10230948\Desktop\eduPractice-main\CatKitchenApp\CatKitchenApp\obj\Debug
 C:\Users\10230948\Desktop\eduPractice-main\CatKitchenApp\CatKitchenApp\obj\Debug\net8.0\CatKitchenApp.pdb
 C:\Users\10230948\Desktop\eduPractice-main\CatKitchenApp\CatKitchenApp\obj\Debug\net8.0\CatKitchenApp.genruntimeconfig.cache
 C:\Users\10230948\Desktop\eduPractice-main\CatKitchenApp\CatKitchenApp\obj\Debug\net8.0\ref\CatKitchenApp.dll
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75

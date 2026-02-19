@@ -12,7 +12,10 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.24",
           "Microsoft.AspNetCore.Identity.UI": "8.0.24",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore.Tools": "8.0.24",
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.23"
         },
         "runtime": {
@@ -23,12 +26,16 @@
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
           "System.ClientModel": "1.0.0",
+<<<<<<< HEAD
           "System.Diagnostics.DiagnosticSource": "6.0.1",
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Encodings.Web": "6.0.1",
           "System.Text.Json": "8.0.6",
           "System.Threading.Tasks.Extensions": "4.5.4"
+=======
+          "System.Memory.Data": "1.0.2"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net6.0/Azure.Core.dll": {
@@ -42,10 +49,14 @@
           "Azure.Core": "1.38.0",
           "Microsoft.Identity.Client": "4.61.3",
           "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
+<<<<<<< HEAD
           "System.Memory": "4.5.4",
           "System.Security.Cryptography.ProtectedData": "8.0.0",
           "System.Text.Json": "8.0.6",
           "System.Threading.Tasks.Extensions": "4.5.4"
+=======
+          "System.Security.Cryptography.ProtectedData": "8.0.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {
@@ -668,9 +679,13 @@
         "dependencies": {
           "Microsoft.Build.Framework": "17.11.48",
           "Microsoft.NET.StringTools": "17.11.48",
+<<<<<<< HEAD
           "System.Collections.Immutable": "8.0.0",
           "System.Configuration.ConfigurationManager": "8.0.0",
           "System.Reflection.Metadata": "8.0.0",
+=======
+          "System.Configuration.ConfigurationManager": "8.0.0",
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
           "System.Reflection.MetadataLoadContext": "8.0.0"
         },
         "runtime": {
@@ -688,7 +703,10 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.CodeAnalysis.Analyzers/3.3.4": {},
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "Microsoft.CodeAnalysis.AnalyzerUtilities/3.3.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll": {
@@ -698,12 +716,15 @@
         }
       },
       "Microsoft.CodeAnalysis.Common/4.8.0": {
+<<<<<<< HEAD
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
           "System.Collections.Immutable": "8.0.0",
           "System.Reflection.Metadata": "8.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.dll": {
             "assemblyVersion": "4.8.0.0",
@@ -918,8 +939,12 @@
       },
       "Microsoft.CodeAnalysis.Elfie/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "System.Configuration.ConfigurationManager": "8.0.0",
           "System.Data.DataSetExtensions": "4.5.0"
+=======
+          "System.Configuration.ConfigurationManager": "8.0.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll": {
@@ -935,8 +960,12 @@
           "Microsoft.CodeAnalysis.Elfie": "1.0.0",
           "Microsoft.CodeAnalysis.Scripting.Common": "4.8.0",
           "Microsoft.CodeAnalysis.Workspaces.Common": "4.8.0",
+<<<<<<< HEAD
           "Microsoft.DiaSymReader": "2.0.0",
           "System.Text.Json": "8.0.6"
+=======
+          "Microsoft.DiaSymReader": "2.0.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.Features.dll": {
@@ -1056,9 +1085,13 @@
           "Humanizer.Core": "2.14.1",
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
           "Microsoft.CodeAnalysis.Common": "4.8.0",
+<<<<<<< HEAD
           "System.Composition": "7.0.0",
           "System.IO.Pipelines": "7.0.0",
           "System.Threading.Channels": "7.0.0"
+=======
+          "System.Composition": "7.0.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.dll": {
@@ -1108,7 +1141,10 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.CSharp/4.5.0": {},
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "Microsoft.Data.SqlClient/5.1.7": {
         "dependencies": {
           "Azure.Identity": "1.11.4",
@@ -1118,12 +1154,16 @@
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0",
           "Microsoft.SqlServer.Server": "1.0.0",
           "System.Configuration.ConfigurationManager": "8.0.0",
+<<<<<<< HEAD
           "System.Diagnostics.DiagnosticSource": "6.0.1",
           "System.Runtime.Caching": "6.0.0",
           "System.Security.Cryptography.Cng": "5.0.0",
           "System.Security.Principal.Windows": "5.0.0",
           "System.Text.Encoding.CodePages": "6.0.0",
           "System.Text.Encodings.Web": "6.0.1"
+=======
+          "System.Runtime.Caching": "6.0.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net6.0/Microsoft.Data.SqlClient.dll": {
@@ -1185,8 +1225,12 @@
           "Microsoft.Extensions.DependencyModel": "8.0.2",
           "Mono.TextTemplating": "2.3.1",
           "Newtonsoft.Json": "13.0.3",
+<<<<<<< HEAD
           "NuGet.ProjectModel": "6.11.0",
           "System.Formats.Asn1": "8.0.2"
+=======
+          "NuGet.ProjectModel": "6.11.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.DotNet.Scaffolding.Shared.dll": {
@@ -1198,7 +1242,10 @@
       "Microsoft.EntityFrameworkCore/8.0.24": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.24",
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore.Analyzers": "8.0.24",
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
           "Microsoft.Extensions.Caching.Memory": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
@@ -1217,7 +1264,10 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Analyzers/8.0.24": {},
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "Microsoft.EntityFrameworkCore.Design/8.0.24": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
@@ -1235,8 +1285,12 @@
       },
       "Microsoft.EntityFrameworkCore.Relational/8.0.24": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
+=======
+          "Microsoft.EntityFrameworkCore": "8.0.24"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
@@ -1248,8 +1302,12 @@
       "Microsoft.EntityFrameworkCore.SqlServer/8.0.24": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.7",
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore.Relational": "8.0.24",
           "System.Formats.Asn1": "8.0.2"
+=======
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.24"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -1258,6 +1316,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Tools/8.0.24": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "8.0.24"
@@ -1275,6 +1334,13 @@
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
           "Microsoft.Extensions.Options": "8.0.2",
           "Microsoft.Extensions.Primitives": "8.0.0"
+=======
+      "Microsoft.Extensions.Caching.Memory/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Options": "8.0.2"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
@@ -1283,11 +1349,14 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "Microsoft.Extensions.DependencyInjection/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -1315,6 +1384,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -1324,6 +1394,9 @@
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0"
         },
+=======
+      "Microsoft.Extensions.FileProviders.Embedded/8.0.24": {
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
             "assemblyVersion": "8.0.0.0",
@@ -1346,7 +1419,10 @@
       },
       "Microsoft.Extensions.Identity.Stores/8.0.24": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
           "Microsoft.Extensions.Identity.Core": "8.0.24",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
@@ -1383,8 +1459,12 @@
       },
       "Microsoft.Extensions.Options/8.0.2": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Microsoft.Extensions.Primitives": "8.0.0"
+=======
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Options.dll": {
@@ -1393,11 +1473,17 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.Extensions.Primitives/8.0.0": {},
       "Microsoft.Identity.Client/4.61.3": {
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "6.35.0",
           "System.Diagnostics.DiagnosticSource": "6.0.1"
+=======
+      "Microsoft.Identity.Client/4.61.3": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "6.35.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net6.0/Microsoft.Identity.Client.dll": {
@@ -1428,10 +1514,14 @@
       },
       "Microsoft.IdentityModel.JsonWebTokens/6.35.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.IdentityModel.Tokens": "6.35.0",
           "System.Text.Encoding": "4.3.0",
           "System.Text.Encodings.Web": "6.0.1",
           "System.Text.Json": "8.0.6"
+=======
+          "Microsoft.IdentityModel.Tokens": "6.35.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -1477,9 +1567,13 @@
       },
       "Microsoft.IdentityModel.Tokens/6.35.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.CSharp": "4.5.0",
           "Microsoft.IdentityModel.Logging": "6.35.0",
           "System.Security.Cryptography.Cng": "5.0.0"
+=======
+          "Microsoft.IdentityModel.Logging": "6.35.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
@@ -1496,8 +1590,11 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "Microsoft.SqlServer.Server/1.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
@@ -1534,8 +1631,12 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design/8.0.23": {
         "dependencies": {
           "Microsoft.DotNet.Scaffolding.Shared": "8.0.23",
+<<<<<<< HEAD
           "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "8.0.23",
           "System.Text.Json": "8.0.6"
+=======
+          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "8.0.23"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net8.0/dotnet-aspnet-codegenerator-design.dll": {
@@ -1676,8 +1777,12 @@
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "NuGet.Configuration": "6.11.0",
+<<<<<<< HEAD
           "NuGet.Versioning": "6.11.0",
           "System.Security.Cryptography.Pkcs": "6.0.4"
+=======
+          "NuGet.Versioning": "6.11.0"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net5.0/NuGet.Packaging.dll": {
@@ -1718,8 +1823,12 @@
       },
       "System.ClientModel/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "System.Memory.Data": "1.0.2",
           "System.Text.Json": "8.0.6"
+=======
+          "System.Memory.Data": "1.0.2"
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         },
         "runtime": {
           "lib/net6.0/System.ClientModel.dll": {
@@ -1736,7 +1845,10 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Collections.Immutable/8.0.0": {},
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "System.Composition/7.0.0": {
         "dependencies": {
           "System.Composition.AttributedModel": "7.0.0",
@@ -1799,7 +1911,10 @@
       },
       "System.Configuration.ConfigurationManager/8.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "System.Diagnostics.EventLog": "8.0.0",
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
           "System.Security.Cryptography.ProtectedData": "8.0.0"
         },
         "runtime": {
@@ -1809,6 +1924,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Data.DataSetExtensions/4.5.0": {},
       "System.Diagnostics.DiagnosticSource/6.0.1": {
         "dependencies": {
@@ -1817,6 +1933,8 @@
       },
       "System.Diagnostics.EventLog/8.0.0": {},
       "System.Formats.Asn1/8.0.2": {},
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "System.IdentityModel.Tokens.Jwt/6.35.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
@@ -1829,6 +1947,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.IO.Pipelines/7.0.0": {},
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
@@ -1836,6 +1955,9 @@
           "System.Text.Encodings.Web": "6.0.1",
           "System.Text.Json": "8.0.6"
         },
+=======
+      "System.Memory.Data/1.0.2": {
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         "runtime": {
           "lib/netstandard2.0/System.Memory.Data.dll": {
             "assemblyVersion": "1.0.2.0",
@@ -1843,6 +1965,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Numerics.Vectors/4.5.0": {},
       "System.Reflection.Metadata/8.0.0": {
         "dependencies": {
@@ -1854,6 +1977,9 @@
           "System.Collections.Immutable": "8.0.0",
           "System.Reflection.Metadata": "8.0.0"
         },
+=======
+      "System.Reflection.MetadataLoadContext/8.0.0": {
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         "runtime": {
           "lib/net8.0/System.Reflection.MetadataLoadContext.dll": {
             "assemblyVersion": "8.0.0.0",
@@ -1861,12 +1987,15 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Runtime/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "System.Runtime.Caching/6.0.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "8.0.0"
@@ -1886,6 +2015,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "System.Security.Cryptography.Cng/5.0.0": {
         "dependencies": {
@@ -1897,6 +2027,8 @@
           "System.Formats.Asn1": "8.0.2"
         }
       },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
       "System.Security.Cryptography.ProtectedData/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -1904,6 +2036,7 @@
             "fileVersion": "8.0.23.53103"
           }
         }
+<<<<<<< HEAD
       },
       "System.Security.Principal.Windows/5.0.0": {},
       "System.Text.Encoding/4.3.0": {
@@ -1929,6 +2062,9 @@
       },
       "System.Threading.Channels/7.0.0": {},
       "System.Threading.Tasks.Extensions/4.5.4": {}
+=======
+      }
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     }
   },
   "libraries": {
@@ -2364,6 +2500,7 @@
       "path": "microsoft.build.framework/17.11.48",
       "hashPath": "microsoft.build.framework.17.11.48.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.CodeAnalysis.Analyzers/3.3.4": {
       "type": "package",
       "serviceable": true,
@@ -2371,6 +2508,8 @@
       "path": "microsoft.codeanalysis.analyzers/3.3.4",
       "hashPath": "microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.CodeAnalysis.AnalyzerUtilities/3.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2441,6 +2580,7 @@
       "path": "microsoft.codeanalysis.workspaces.common/4.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -2448,6 +2588,8 @@
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.Data.SqlClient/5.1.7": {
       "type": "package",
       "serviceable": true,
@@ -2490,6 +2632,7 @@
       "path": "microsoft.entityframeworkcore.abstractions/8.0.24",
       "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.24.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.EntityFrameworkCore.Analyzers/8.0.24": {
       "type": "package",
       "serviceable": true,
@@ -2497,6 +2640,8 @@
       "path": "microsoft.entityframeworkcore.analyzers/8.0.24",
       "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.24.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.EntityFrameworkCore.Design/8.0.24": {
       "type": "package",
       "serviceable": true,
@@ -2518,6 +2663,7 @@
       "path": "microsoft.entityframeworkcore.sqlserver/8.0.24",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.8.0.24.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.EntityFrameworkCore.Tools/8.0.24": {
       "type": "package",
       "serviceable": true,
@@ -2532,6 +2678,8 @@
       "path": "microsoft.extensions.caching.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.Extensions.Caching.Memory/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -2539,6 +2687,7 @@
       "path": "microsoft.extensions.caching.memory/8.0.1",
       "hashPath": "microsoft.extensions.caching.memory.8.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2546,6 +2695,8 @@
       "path": "microsoft.extensions.configuration.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.Extensions.DependencyInjection/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -2567,6 +2718,7 @@
       "path": "microsoft.extensions.dependencymodel/8.0.2",
       "hashPath": "microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2574,6 +2726,8 @@
       "path": "microsoft.extensions.fileproviders.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.Extensions.FileProviders.Embedded/8.0.24": {
       "type": "package",
       "serviceable": true,
@@ -2616,6 +2770,7 @@
       "path": "microsoft.extensions.options/8.0.2",
       "hashPath": "microsoft.extensions.options.8.0.2.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Primitives/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2623,6 +2778,8 @@
       "path": "microsoft.extensions.primitives/8.0.0",
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.Identity.Client/4.61.3": {
       "type": "package",
       "serviceable": true,
@@ -2686,6 +2843,7 @@
       "path": "microsoft.net.stringtools/17.11.48",
       "hashPath": "microsoft.net.stringtools.17.11.48.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -2700,6 +2858,8 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "Microsoft.SqlServer.Server/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2847,6 +3007,7 @@
       "path": "system.codedom/5.0.0",
       "hashPath": "system.codedom.5.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Collections.Immutable/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2854,6 +3015,8 @@
       "path": "system.collections.immutable/8.0.0",
       "hashPath": "system.collections.immutable.8.0.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "System.Composition/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2903,6 +3066,7 @@
       "path": "system.configuration.configurationmanager/8.0.0",
       "hashPath": "system.configuration.configurationmanager.8.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Data.DataSetExtensions/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -2931,6 +3095,8 @@
       "path": "system.formats.asn1/8.0.2",
       "hashPath": "system.formats.asn1.8.0.2.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "System.IdentityModel.Tokens.Jwt/6.35.0": {
       "type": "package",
       "serviceable": true,
@@ -2938,6 +3104,7 @@
       "path": "system.identitymodel.tokens.jwt/6.35.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.IO.Pipelines/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2952,6 +3119,8 @@
       "path": "system.memory/4.5.4",
       "hashPath": "system.memory.4.5.4.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "System.Memory.Data/1.0.2": {
       "type": "package",
       "serviceable": true,
@@ -2959,6 +3128,7 @@
       "path": "system.memory.data/1.0.2",
       "hashPath": "system.memory.data.1.0.2.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -2973,6 +3143,8 @@
       "path": "system.reflection.metadata/8.0.0",
       "hashPath": "system.reflection.metadata.8.0.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "System.Reflection.MetadataLoadContext/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2980,6 +3152,7 @@
       "path": "system.reflection.metadataloadcontext/8.0.0",
       "hashPath": "system.reflection.metadataloadcontext.8.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Runtime/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2987,6 +3160,8 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "System.Runtime.Caching/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2994,6 +3169,7 @@
       "path": "system.runtime.caching/6.0.0",
       "hashPath": "system.runtime.caching.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3015,12 +3191,15 @@
       "path": "system.security.cryptography.pkcs/6.0.4",
       "hashPath": "system.security.cryptography.pkcs.6.0.4.nupkg.sha512"
     },
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
       "path": "system.security.cryptography.protecteddata/8.0.0",
       "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+<<<<<<< HEAD
     },
     "System.Security.Principal.Windows/5.0.0": {
       "type": "package",
@@ -3070,6 +3249,8 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+=======
+>>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
     }
   }
 }
