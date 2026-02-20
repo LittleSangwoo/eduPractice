@@ -58,22 +58,16 @@ namespace CatKitchenApp.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-<<<<<<< HEAD
                     b.Property<int>("RoleID")
                         .HasColumnType("int");
 
-=======
->>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
                     b.Property<decimal>("Stage")
                         .HasColumnType("decimal(18, 3)");
 
                     b.HasKey("AuthorID");
 
-<<<<<<< HEAD
                     b.HasIndex("RoleID");
 
-=======
->>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
                     b.ToTable("Authors");
                 });
 
@@ -277,7 +271,6 @@ namespace CatKitchenApp.Migrations
                     b.ToTable("Reviews");
                 });
 
-<<<<<<< HEAD
             modelBuilder.Entity("CatKitchenApp.Models.Role", b =>
                 {
                     b.Property<int>("RoleID")
@@ -295,8 +288,6 @@ namespace CatKitchenApp.Migrations
                     b.ToTable("Roles");
                 });
 
-=======
->>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
             modelBuilder.Entity("CatKitchenApp.Models.Tag", b =>
                 {
                     b.Property<int>("TagID")
@@ -315,7 +306,6 @@ namespace CatKitchenApp.Migrations
                     b.ToTable("Tags");
                 });
 
-<<<<<<< HEAD
             modelBuilder.Entity("CatKitchenApp.Models.Author", b =>
                 {
                     b.HasOne("CatKitchenApp.Models.Role", "Role")
@@ -327,8 +317,6 @@ namespace CatKitchenApp.Migrations
                     b.Navigation("Role");
                 });
 
-=======
->>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
             modelBuilder.Entity("CatKitchenApp.Models.CookingStep", b =>
                 {
                     b.HasOne("CatKitchenApp.Models.Recipe", "Recipe")
@@ -445,14 +433,11 @@ namespace CatKitchenApp.Migrations
                     b.Navigation("Reviews");
                 });
 
-<<<<<<< HEAD
             modelBuilder.Entity("CatKitchenApp.Models.Role", b =>
                 {
                     b.Navigation("Authors");
                 });
 
-=======
->>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
             modelBuilder.Entity("CatKitchenApp.Models.Tag", b =>
                 {
                     b.Navigation("RecipeTags");

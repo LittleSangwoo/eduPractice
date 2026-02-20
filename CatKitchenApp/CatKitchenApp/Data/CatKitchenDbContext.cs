@@ -11,10 +11,7 @@ namespace CatKitchenApp.Data
         }
 
         public DbSet<Author> Authors { get; set; }
-<<<<<<< HEAD
         public DbSet<Role> Roles { get; set; }
-=======
->>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         public DbSet<Category> Categories { get; set; }
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }

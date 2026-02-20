@@ -21,6 +21,7 @@ namespace CatKitchenApp.Controllers
         }
 
         // ГЛАВНЫЙ МЕТОД (Один для всех требований: поиск, фильтр, сортировка)
+        [Authorize]
         public async Task<IActionResult> Index(string searchString, int? categoryId, string sortOrder)
         {
 // 1. Загружаем категории для выпадающего списка 
@@ -54,6 +55,7 @@ namespace CatKitchenApp.Controllers
         }
 
         // GET: Recipes/Details/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
@@ -93,6 +95,7 @@ namespace CatKitchenApp.Controllers
         }
 
         // GET: Recipes/Edit/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -131,6 +134,7 @@ namespace CatKitchenApp.Controllers
         }
 
         // GET: Recipes/Delete/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();

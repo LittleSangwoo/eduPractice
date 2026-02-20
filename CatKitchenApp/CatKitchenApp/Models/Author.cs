@@ -35,13 +35,10 @@ namespace CatKitchenApp.Models
         [StringLength(50)]
         public string Mail { get; set; }
 
-<<<<<<< HEAD
         public int RoleID { get; set; }
         [ForeignKey("RoleID")]
         public Role Role { get; set; }
 
-=======
->>>>>>> 05f4f90d23455601ec6338e9634a94c0ea9aac75
         // Связь: Один автор -> Много рецептов
         public List<Recipe> Recipes { get; set; }
     }
