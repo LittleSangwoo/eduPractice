@@ -12,8 +12,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddAuthentication("CookieAuth").AddCookie("CookieAuth", options =>
 {
     options.Cookie.Name = "CatKithen.Auth";
-    options.LoginPath = "/Account/Login";
-    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.LoginPath = "/Author/Login";
+    options.AccessDeniedPath = "/Author/AccessDenied";
 });
 builder.Services.AddAuthorization();
 var app = builder.Build();
