@@ -6,6 +6,7 @@ namespace CatKitchenApp.Models
     public class Recipe
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int RecipeID { get; set; }
 
         [Required]

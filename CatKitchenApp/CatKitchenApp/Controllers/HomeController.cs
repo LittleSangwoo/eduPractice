@@ -6,12 +6,14 @@ namespace CatKitchenApp.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
         {
-            return View();
+            _logger = logger;
         }
 
-        public IActionResult Privacy()
+        public IActionResult Index()
         {
             return View();
         }
@@ -19,6 +21,15 @@ namespace CatKitchenApp.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+            // Получаем информацию об ошибке
+            var exceptionHandlerPathFeature = HttpContext.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
+
+            if (exceptionHandlerPathFeature?.Error != null)
+            {
+                // Логируем ошибку (по умолчанию пишется в консоль приложения)
+                _logger.LogError(exceptionHandlerPathFeature.Error, "Произошла необработанная ошибка по пути: {Path}", exceptionHandlerPathFeature.Path);
+            }
+
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }

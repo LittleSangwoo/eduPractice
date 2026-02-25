@@ -1,4 +1,5 @@
 using CatKitchenApp.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,15 +8,16 @@ builder.Services.AddDbContext<CatKitchenDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";
+        options.AccessDeniedPath = "/Account/Login";
+    });
 
-builder.Services.AddAuthentication("CookieAuth").AddCookie("CookieAuth", options =>
-{
-    options.Cookie.Name = "CatKithen.Auth";
-    options.LoginPath = "/Author/Login";
-    options.AccessDeniedPath = "/Author/AccessDenied";
-});
+builder.Services.AddControllersWithViews();
 builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,14 +31,14 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+app.UseStaticFiles();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseStaticFiles();
-
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Recipes}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
 
 app.Run();
