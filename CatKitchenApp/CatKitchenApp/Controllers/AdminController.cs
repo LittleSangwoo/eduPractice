@@ -169,5 +169,19 @@ namespace CatKitchenApp.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Details(int id)
+        {
+            var recipe = await _context.Recipes
+                .Include(r => r.Category)
+                .Include(r => r.Author)
+                .Include(r => r.CookingSteps.OrderBy(s => s.StepNumber)) // Подгружаем шаги
+                .Include(r => r.RecipeIngredients).ThenInclude(ri => ri.Ingredient) // Подгружаем ингредиенты
+                .Include(r => r.Reviews) // Подгружаем отзывы
+                .FirstOrDefaultAsync(m => m.RecipeID == id);
+
+            if (recipe == null) return NotFound();
+
+            return View(recipe);
+        }
     }
 }
