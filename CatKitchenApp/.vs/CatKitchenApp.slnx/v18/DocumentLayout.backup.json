@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\catkitchenapp\\catkitchenapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|solutionrelative:catkitchenapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\catkitchenapp\\catkitchenapp\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|solutionrelative:catkitchenapp\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\catkitchenapp\\catkitchenapp\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|solutionrelative:catkitchenapp\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\catkitchenapp\\catkitchenapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|solutionrelative:catkitchenapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\catkitchenapp\\catkitchenapp\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|solutionrelative:catkitchenapp\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\catkitchenapp\\catkitchenapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|solutionrelative:catkitchenapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{218F7DA3-F3DD-4DE0-3AFE-58137B245A1E}|CatKitchenApp\\CatKitchenApp.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\catkitchenapp\\catkitchenapp\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -157,20 +157,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Views\\Admin\\Details.cshtml",
               "RelativeDocumentMoniker": "CatKitchenApp\\Views\\Admin\\Details.cshtml",
               "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Views\\Admin\\Details.cshtml",
               "RelativeToolTip": "CatKitchenApp\\Views\\Admin\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-25T09:28:12.158Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "CatKitchenApp\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "CatKitchenApp\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T08:01:44.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "CatKitchenApp\\Controllers\\RecipesController.cs",
+              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "CatKitchenApp\\Controllers\\RecipesController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:54:23.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CatKitchenApp\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CatKitchenApp\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAAwLsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T07:59:39.722Z"
             },
             {
               "$type": "Document",
@@ -183,45 +219,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-25T08:44:39.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "CatKitchenApp\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "CatKitchenApp\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-25T08:01:44.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RecipesController.cs",
-              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\RecipesController.cs",
-              "RelativeDocumentMoniker": "CatKitchenApp\\Controllers\\RecipesController.cs",
-              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\RecipesController.cs",
-              "RelativeToolTip": "CatKitchenApp\\Controllers\\RecipesController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T21:54:23.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "CatKitchenApp\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u043F\\CatKitchenApp\\CatKitchenApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "CatKitchenApp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAuwLgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T07:59:39.722Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -245,8 +242,7 @@
               "RelativeToolTip": "CatKitchenApp\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-25T08:47:01.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T08:47:01.608Z"
             },
             {
               "$type": "Document",
@@ -270,8 +266,7 @@
               "RelativeToolTip": "CatKitchenApp\\Views\\Recipes\\Index.cshtml",
               "ViewState": "AgIAAIAAAAAAAAAAAAAAAI8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-25T07:17:18.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T07:17:18.189Z"
             },
             {
               "$type": "Document",

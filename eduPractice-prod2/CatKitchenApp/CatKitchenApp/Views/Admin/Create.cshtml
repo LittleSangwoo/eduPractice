@@ -1,0 +1,61 @@
+﻿@model CatKitchenApp.ViewModels.RecipeFormViewModel
+@{
+    ViewData["Title"] = "Добавление рецепта";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0">Добавить новый рецепт</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <div class="mb-3">
+                            <label asp-for="RecipeName" class="form-label"></label>
+                            <input asp-for="RecipeName" class="form-control" />
+                            <span asp-validation-for="RecipeName" class="text-danger small"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label"></label>
+                            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Description" class="text-danger small"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="CookingTime" class="form-label"></label>
+                                <input asp-for="CookingTime" class="form-control" type="number" />
+                                <span asp-validation-for="CookingTime" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="CategoryID" class="form-label"></label>
+                                <select asp-for="CategoryID" asp-items="Model.Categories" class="form-select"></select>
+                                <span asp-validation-for="CategoryID" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="AuthorID" class="form-label"></label>
+                                <select asp-for="AuthorID" asp-items="Model.Authors" class="form-select"></select>
+                                <span asp-validation-for="AuthorID" class="text-danger small"></span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="Image" class="form-label"></label>
+                            <input asp-for="Image" class="form-control" placeholder="/images/my-recipe.jpg" />
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+                            <button type="submit" class="btn btn-success">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

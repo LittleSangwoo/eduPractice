@@ -1,0 +1,297 @@
+﻿@model CatKitchenApp.ViewModels.RecipeIndexViewModel
+@{
+    ViewData["Title"] = "Книга рецептов";
+}
+
+<style>
+    /* 1. Глобальная гармония цветов (Стиль рыжего кота) */
+    html {
+        position: static !important; /* Убиваем стандартный relative */
+        height: auto !important;
+    }
+
+    body {
+        margin-bottom: 0 !important; /* Убиваем отступ под стандартный футер */
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: 100vh !important;
+        background-color: #fdf6f0 !important; /* Теплый кремово-персиковый фон */
+        color: #4e342e !important;
+        border: none !important; /* Убиваем красные рамки */
+    }
+
+    /* Заставляем основной блок растягиваться и выталкивать подвал */
+    main, .pb-3 {
+        flex: 1 0 auto !important;
+        padding-bottom: 0 !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .container {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* ФИКС ПОДВАЛА: Отменяем абсолютное позиционирование */
+    footer, .footer, .border-top.footer.text-muted {
+        position: static !important; /* Сбрасываем absolute */
+        bottom: auto !important;
+        margin-top: auto !important; /* Прижимает футер к самому низу flex-контейнера */
+        width: 100% !important;
+        background-color: #fae8d6 !important; /* В цвет нашего стиля */
+        border: none !important;
+        border-top: 2px solid #f0d5be !important;
+        color: #8d6e63 !important;
+        padding: 20px 0 !important;
+        line-height: normal !important;
+    }
+
+        /* Скрываем стандартные ссылки в футере, чтобы они не ломали цвет, если нужно */
+        footer a {
+            color: #d35400 !important;
+            text-decoration: none;
+        }
+
+    /* 2. Карточки рецептов */
+    .recipe-card {
+        border: none;
+        border-radius: 20px; /* Более мягкие, кошачьи скругления */
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(230, 126, 34, 0.08); /* Легкая рыжая тень */
+        overflow: hidden;
+    }
+
+        .recipe-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(230, 126, 34, 0.18) !important;
+        }
+
+    .recipe-img-container {
+        height: 220px;
+        background-color: #f5ebe1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recipe-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Бейджик категории */
+    .category-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #d35400; /* Яркий рыжий */
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        z-index: 2;
+    }
+
+    /* 3. Панель управления */
+    .search-panel {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 8px 20px rgba(230, 126, 34, 0.05);
+    }
+
+    /* Кнопки в стиле рыжего кота */
+    .btn-ginger {
+        background-color: #e67e22 !important; /* Цвет апельсина/рыжего кота */
+        color: white !important;
+        border: none !important;
+        border-radius: 12px;
+        font-weight: 600;
+        transition: background-color 0.2s;
+    }
+
+        .btn-ginger:hover {
+            background-color: #d35400 !important;
+        }
+
+    .btn-light-ginger {
+        background-color: #fae8d6 !important;
+        color: #d35400 !important;
+        border: none !important;
+        border-radius: 12px;
+        font-weight: 600;
+    }
+
+        .btn-light-ginger:hover {
+            background-color: #f0d5be !important;
+        }
+
+    .form-control, .form-select {
+        border-radius: 10px;
+        border: 1px solid #f0d5be;
+        background-color: #fcf9f5;
+    }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #e67e22;
+            box-shadow: 0 0 0 0.25rem rgba(230, 126, 34, 0.25);
+        }
+</style>
+
+<div class="container py-4 main-container">
+
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-dark">🐈 Кулинарная книга Ахиллеса</h1>
+        <p class="text-muted fs-5">Лучшие рецепты, одобренные девятью жизнями</p>
+    </div>
+
+    <div class="search-panel mb-5">
+        <form asp-action="Index" method="get" class="row g-3 align-items-end">
+
+            <div class="col-lg-4 col-md-12">
+                <label class="form-label text-secondary small fw-bold">Поиск по рецептам</label>
+                <input type="text" name="searchTerm" value="@Model.SearchTerm" class="form-control bg-light" placeholder="Название или описание...">
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <label class="form-label text-secondary small fw-bold">Категория</label>
+                <select name="categoryId" asp-items="Model.Categories" class="form-select bg-light">
+                    <option value="">-- Все категории --</option>
+                </select>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <label class="form-label text-secondary small fw-bold">Сортировка</label>
+                <select name="sortOrder" class="form-select bg-light">
+                    <option value="" selected="@(string.IsNullOrEmpty(Model.SortOrder))">По названию (А-Я)</option>
+                    <option value="name_desc" selected="@(Model.SortOrder == "name_desc")">По названию (Я-А)</option>
+                    <option value="time" selected="@(Model.SortOrder == "time")">Сначала быстрые</option>
+                    <option value="time_desc" selected="@(Model.SortOrder == "time_desc")">Сначала долгие</option>
+                </select>
+            </div>
+
+            <div class="col-lg-2 col-md-12 d-flex gap-2">
+                <button type="submit" class="btn btn-primary w-100" style="background-color: #0d6efd;">Применить</button>
+                <a asp-action="Index" class="btn btn-secondary w-100">Сброс</a>
+            </div>
+        </form>
+    </div>
+
+    @if (!Model.Recipes.Any())
+    {
+        <div class="text-center py-5">
+            <h3 class="text-muted">Ничего не найдено</h3>
+            <p>Попробуйте изменить параметры поиска</p>
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+            @foreach (var item in Model.Recipes)
+            {
+                <div class="col">
+                    <div class="card recipe-card h-100 shadow-sm">
+                        <div class="recipe-img-container">
+                            <span class="category-badge">
+                                @item.Category?.CategoryName
+                            </span>
+                            <img src="@item.Image"
+                                 class="recipe-img"
+                                 alt="@item.RecipeName"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/eee/AAA?text=No+Image';">
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark mb-2">@item.RecipeName</h5>
+
+                            <p class="card-text text-muted small flex-grow-1">
+                                @if (item.Description.Length > 80)
+                                {
+                                    @item.Description.Substring(0, 80)
+                        
+                                    <span>...</span>
+                                }
+                                else
+                                {
+                                    @item.Description
+                                }
+                            </p>
+
+                            <hr class="my-3 opacity-25">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="text-muted small fw-semibold">
+                                    ⏱ @item.CookingTime мин
+                                </div>
+                                <div class="text-muted small">
+                                    👤 @item.Author?.AuthorName
+                                </div>
+                            </div>
+
+
+                            <a asp-action="Details" asp-route-id="@item.RecipeID" class="btn btn-primary btn-sm rounded-pill px-3">
+                                <i class="bi bi-eye"></i> Посмотреть
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        @if (Model.TotalPages > 1)
+        {
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item @(!Model.HasPreviousPage ? "disabled" : "")">
+                        <a class="page-link shadow-sm mx-1"
+                           asp-action="Index"
+                           asp-route-pageNumber="@(Model.PageNumber - 1)"
+                           asp-route-searchTerm="@Model.SearchTerm"
+                           asp-route-categoryId="@Model.SelectedCategoryId"
+                           asp-route-sortOrder="@Model.SortOrder">
+                            Назад
+                        </a>
+                    </li>
+
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                            <a class="page-link shadow-sm mx-1"
+                               asp-action="Index"
+                               asp-route-pageNumber="@i"
+                               asp-route-searchTerm="@Model.SearchTerm"
+                               asp-route-categoryId="@Model.SelectedCategoryId"
+                               asp-route-sortOrder="@Model.SortOrder">@i</a>
+                        </li>
+                    }
+
+                    <li class="page-item @(!Model.HasNextPage ? "disabled" : "")">
+                        <a class="page-link shadow-sm mx-1"
+                           asp-action="Index"
+                           asp-route-pageNumber="@(Model.PageNumber + 1)"
+                           asp-route-searchTerm="@Model.SearchTerm"
+                           asp-route-categoryId="@Model.SelectedCategoryId"
+                           asp-route-sortOrder="@Model.SortOrder">
+                            Вперед
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+            {
+                <li class="nav-item">
+                    <a class="btn btn-outline-danger ms-lg-3" asp-controller="Admin" asp-action="Index">
+                        <i class="bi bi-arrow-left-circle"></i> Вернуться в админ-панель
+                    </a>
+                </li>
+            }
+        }
+    }
+</div>

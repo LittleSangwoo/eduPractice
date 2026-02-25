@@ -1,0 +1,83 @@
+body {
+    background-color: #f5d7b3; /* Бежевый */
+}
+
+.main-container {
+    border: 5px solid #a52a2a; /* Коричнево-красная рамка */
+    padding: 20px;
+    min-height: 90vh;
+}
+
+.filter-panel label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Кнопки в стиле твоего макета */
+.btn-outline-secondary {
+    background-color: #d3d3d3;
+    color: black;
+    border: 1px solid #000;
+}
+
+/* Стилизация карточки рецепта */
+.recipe-card {
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); /* Тот самый эффект стекла */
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    height: 100%;
+}
+
+    .recipe-card:hover {
+        transform: translateY(-10px); /* Карточка "подпрыгивает" */
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+/* Стилизация фото */
+.recipe-img-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .recipe-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+.recipe-card:hover .recipe-img-container img {
+    transform: scale(1.1); /* Фото плавно увеличивается */
+}
+
+/* Бэйджи (категории) */
+.cat-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 107, 107, 0.9);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Современный поиск */
+.search-bar-modern {
+    background: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+    .search-bar-modern:focus {
+        border-color: #ff6b6b;
+        box-shadow: none;
+    }

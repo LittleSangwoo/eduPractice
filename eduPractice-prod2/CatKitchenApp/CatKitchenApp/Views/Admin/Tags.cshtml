@@ -1,0 +1,23 @@
+﻿@model IEnumerable<CatKitchenApp.Models.Tag>
+@{
+    ViewData["Title"] = "Теги";
+}
+
+<div class="container mt-4">
+    <h3 class="fw-bold text-danger mb-3"><i class="bi bi-tags"></i> Справочник: Теги</h3>
+    <partial name="_AdminNav" />
+
+    <div class="card shadow-sm border-0 rounded-3">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-dark">
+                <tr><th>ID</th><th>Название тега</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr><td>@item.TagID</td><td><span class="badge bg-info text-dark">@item.TagName</span></td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

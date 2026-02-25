@@ -1,0 +1,24 @@
+﻿@{
+    var currentAction = ViewContext.RouteData.Values["Action"]?.ToString();
+}
+
+<ul class="nav nav-tabs mb-4">
+    <li class="nav-item">
+        <a class="nav-link @(currentAction == "Index" ? "active fw-bold" : "")" asp-action="Index">Рецепты</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(currentAction == "Authors" ? "active fw-bold" : "")" asp-action="Authors">Авторы</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(currentAction == "Roles" ? "active fw-bold" : "")" asp-action="Roles">Роли</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(currentAction == "Tags" ? "active fw-bold" : "")" asp-action="Tags">Теги</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(currentAction == "Ingredients" ? "active fw-bold" : "")" asp-action="Ingredients">Ингредиенты</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(currentAction == "Categories" ? "active fw-bold" : "")" asp-action="Categories">Категории</a>
+    </li>
+</ul>
